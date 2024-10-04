@@ -50,4 +50,24 @@ int main() {
   cout<<"last element "<<s.back()<<end
 
 }
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
 
+	// cout<<"hello";
+	set<int> s;
+	s.insert(1);
+	s.insert(2);
+	for (int i = -1; i <= 10; i++) 
+	{
+    s.insert(i);
+    }
+
+     for (auto it = s.begin(); it != s.end(); it++)
+      {
+    cout << * it << " ";
+       }
+       cout<<"size is "<<endl;
+       cout<<s.size();
+}
