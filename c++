@@ -71,3 +71,24 @@ int main()
        cout<<"size is "<<endl;
        cout<<s.size();
 }
+
+
+//map
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+	//map
+	//in map values are entered in the key value pair
+	//
+	map <int ,string> m;
+	m[1]="abc";
+	m[2]="pandit";
+	m[3]="abc";
+	map <int ,string> ::iterator it;
+	for(it=m.begin();it!=m.end();++it)
+	{
+		cout<<(*it).first<< endl<<" "<<(*it).second;
+	}
+}
