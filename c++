@@ -3,23 +3,36 @@ c++
 
 Implementation of unordered set 
 
-#include<bits/stdc++.h>
-
+#include <bits/stdc++.h>   // includes all standard libraries
 using namespace std;
 
 int main() {
   
-  unordered_set <int> s;
-  s.insert(1);
-  s.insert(2);
-  s.insert(3);
-  for (auto  i = s.begin(); i != s.end(); i++) {
-    cout << * i << " ";
+  unordered_set<int> s;   // declare an unordered set of integers (stores only unique elements, order not fixed)
 
-    cout<<s.size();
-}
+  s.insert(1);            // insert element 1
+  s.insert(2);            // insert element 2
+  s.insert(3);            // insert element 3
 
+  // iterate through unordered_set
+  for (auto i = s.begin(); i != s.end(); i++) {
+    cout << *i << " ";    // print each element (*i means dereference the iterator to get the value)
+    cout << s.size();     // print the current size of the set (number of unique elements stored)
+  }
+
+
+
+
+//  // advanced for loop (range-based for loop)
+  for (int val : s) {
+    cout << val << " ";    // print element
+    cout << s.size();      // print set size
+  }
 }
+Key Point: unordered_set → stores unique elements but in no particular order. Lookup, insert, erase are O(1) average.
+
+
+
 
 vectors are dynamic array 
 
