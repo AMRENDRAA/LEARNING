@@ -62,6 +62,14 @@ int main() {
   cout<<"first element is"<<s.front()<<endl;
   cout<<"last element "<<s.back()<<end
 
+
+	  
+ // advanced for loop
+
+for( auto &num:s)
+{
+	cout<<num
+
 }
 
 //sets 
