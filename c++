@@ -144,9 +144,13 @@ for (int i=0;i<n;i++)
 	cin>>s;
 	m[s]++;
 }
-for (auto pr :m){
-	cout<<pr.first<<" "<<pr.second<<endl;
-}
+
+
+
+  // auto (deduces pair<const string, int>)
+  for (auto &pr : m) {
+    cout << pr.first << " " << pr.second << endl;
+  }
 }
 
 
