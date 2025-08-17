@@ -93,6 +93,12 @@ int main()
        }
        cout<<"size is "<<endl;
        cout<<s.size();
+
+
+	  // auto (deduces int)
+  for (auto val : s) {
+    cout << val << " ";
+  }
 }
 
 
@@ -114,6 +120,12 @@ int main()
 	{
 		cout<<(*it).first<< endl<<" "<<(*it).second;
 	}
+
+
+  // auto (deduces pair<const int, string>)
+  for (auto &p : m) {
+    cout << p.first << " " << p.second << endl;
+  }
 }
 
 #include<bits/stdc++.h>
