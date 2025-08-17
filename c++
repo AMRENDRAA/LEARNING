@@ -115,3 +115,31 @@ for (auto pr :m){
 	cout<<pr.first<<" "<<pr.second<<endl;
 }
 }
+
+
+
+
+
+for (auto it = countMap.begin(); it != countMap.end(); it++) {
+    int number = it->first;       // key
+    int occurrence = it->second;  // value
+    if (occurrenceSet.count(occurrence)) {
+        return false;
+    }
+    occurrenceSet.insert(occurrence);
+}
+
+
+
+shortcut to write the above code is 
+
+for (auto &entry : countMap) {
+ int occurrence = entry.second;
+ if (occurrenceSet.count(occurrence)){
+ return false;
+ }
+ occurrenceSet.insert(occurrence);
+ }
+
+
+
