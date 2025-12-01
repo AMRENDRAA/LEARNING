@@ -1,0 +1,60 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+#include <map>
+using namespace std;
+int main(){
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Union of the two arrays
+
+
+vector<int > v1;
+
+vector<int> v2;
+
+set <int>s;
+
+
+int n,m;
+
+cin>>n>>m;
+
+for(int i=0;i<n;i++){
+    int inpu;
+    cin>>inpu;
+    v1.push_back(inpu);
+
+}
+for(int i=0;i<m;i++){
+    int inpu;
+    cin>>inpu;
+    v2.push_back(inpu);
+    
+}
+
+// shortcut to traverse the loop 
+
+    for(int x : v1) s.insert(x);
+    for(int x : v2) s.insert(x);
+
+
+ for(int x : s) cout << x << " ";
+}
