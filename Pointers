@@ -1,0 +1,61 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+#include <map>
+using namespace std;
+int main(){
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+// Pointers 
+int x=4;
+int *p_x=&x;
+cout<<"x:"<<x<<endl;
+cout<<"Address of x:"<<&x<<endl;
+cout<<"Value of p_x:"<<p_x<<endl;
+cout<<"Value at  *p_x: "<<*p_x<<endl;
+
+*p_x=5;
+
+cout<<"x:"<<x<<endl;
+cout<<"p_x+1 :"<<*p_x+1<<endl;
+
+
+int **p_p_x=&p_x;
+cout<<"Address p_x"<<&p_x<<endl;
+cout<<"Val *p_p_x"<<*p_p_x<<endl;
+
+
+**p_p_x=7;
+cout<<"x is "<<x<<endl;
+
+int a[10];
+a[0]=2;
+a[1]=4;
+cout<<"a is :"<<a<<endl;
+cout<<"*a is "<<*a<<endl;
+cout<<"&a[0] is "<<&a[0]<<endl;
+cout<<*(a+1);
+
+
+
+
+
+
+
+
+}
