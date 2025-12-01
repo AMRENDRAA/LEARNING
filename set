@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+using namespace std;
+int main(){
+
+  
+
+// SET ->STORES UNIQUE ELEMENTS 
+
+
+    set <int>s;
+    for(int i=0;i<10;i++){
+        s.insert(i);
+
+    }
+
+    for(auto x: s){
+        cout<<x<<endl;
+    }
+    cout<<"Size of set is "<<s.size()<<endl;
+}
