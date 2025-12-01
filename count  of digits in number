@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+#include <map>
+using namespace std;
+int main(){
+
+  
+
+  int n;
+    cin >> n;
+
+    int original = n;   // store original number
+
+    // Method 1: Loop
+    int c = 0;
+    while (n > 0) {
+        cout << n << endl;
+        n = n / 10;
+        c++;
+    }
+
+    cout << endl;
+    cout << "Answer (Loop): " << c << endl;
+
+    // Method 2: log10
+    if (original > 0) {
+        int cnt = (int)(log10(original) + 1);
+        cout << "Answer (log10): " << cnt << endl;
+    } else {
+        cout << "log10 method invalid for non-positive numbers." << endl;
+    }
+}
