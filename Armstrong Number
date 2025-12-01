@@ -1,0 +1,52 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+#include <map>
+using namespace std;
+int main(){
+
+  
+
+
+// ARMSTRONG NUMBER 
+int n;
+cin>>n;
+
+int temp=n;
+int j=n;
+int digit=0;
+
+while(temp>0){
+    temp=temp/10;
+    digit=digit+1;
+
+
+}
+
+cout<<"No of digits: "<<digit<<endl;
+int sum=0;
+
+
+while(j>0){
+
+    int mod=j%10;
+
+    double powerResult = pow(mod, digit);
+
+    sum=sum+powerResult;
+    j=j/10;
+
+
+}
+
+
+
+if(sum==n){
+    cout<<"Yes"<<endl;
+}else{
+    cout<<"No"<<endl;
+}
+}
