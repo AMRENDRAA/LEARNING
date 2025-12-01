@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+using namespace std;
+int main(){
+
+    cout<<"hello"<<endl;
+
+
+    
+    cout<<endl;
+    vector <int> v={1,2,3,4};
+
+    for(auto x:v){
+        cout<<x<<endl ;
+    }
+    cout<<"SIZE OF VECTOR IS "<<v.size()<<endl;
+    cout<<"Initial point  "<<*v.begin()<<endl;
+    cout<<"End point is "<<(v.back())<<endl;
+
+}
