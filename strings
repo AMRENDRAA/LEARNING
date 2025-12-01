@@ -1,0 +1,104 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+#include <map>
+using namespace std;
+int main(){
+
+  
+
+
+
+
+
+
+
+// int n;
+// cin>>n;
+// int sum=0;
+// int temp = n;
+
+//    while (temp > 0) {
+//         int digit = temp % 10;
+//         if (digit != 0) sum += digit;
+//         temp /= 10;
+//     }
+
+
+//  string s = to_string(n), t = "";
+//     for (char c : s) if (c != '0') t += c;
+
+
+//           int finalNum = (t == "") ? 0 : stoi(t);
+
+
+// cout << finalNum * sum;
+
+
+
+
+string name="Pandit" ;
+string s="Hello world ";
+cout<<s[1]<<endl;
+cout<<s<<endl;
+
+//Append two string 
+
+string s2=s.append(name);
+cout<<s2<<endl;
+
+//print the size of the string 
+
+cout<<s.size();
+cout<<name.size()<<endl;
+
+//Print the string 
+
+for(int i=0;i<name.size();i++){
+    cout<<name[i]<<endl;
+}
+
+
+//shortcut
+
+for(auto i:name){
+    cout<<i<<endl;
+}
+
+
+// clear the string 
+
+s.clear();
+
+
+cout<<s;
+cout<<s.size()<<endl;
+
+
+// reverse the string 
+
+
+reverse(name.begin(),name.end());
+cout<<name<<endl;
+//compare two string 
+string p1,p2;
+p1="Ujjal";
+p2="Ujjal";
+
+if(p1==p2){
+    cout<<"yes"<<endl;
+}else{
+    cout<<"No";
+}
+
+// // without spaced input 
+string h;
+cin>>h;
+
+cout<<h;
+
+
+}
