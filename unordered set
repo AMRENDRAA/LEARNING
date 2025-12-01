@@ -1,0 +1,30 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+using namespace std;
+int main(){
+
+    cout<<"hello"<<endl;
+
+
+    
+    cout<<endl;
+unordered_set <int> s;
+for(int i=0;i<=10;i++){
+    s.insert(i);
+
+}
+for(auto it=s.begin();it!=s.end();it++){
+    cout<<*it<<endl;
+}
+cout<<"easy way "<<endl ;
+cout<<""<<endl;
+
+for(auto x:s){
+    cout<<x<<endl;
+}
+
+}
