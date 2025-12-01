@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+#include <map>
+using namespace std;
+int main(){
+
+  
+
+
+
+
+//map ->key value pair 
+map <int ,int> mp;
+
+for(int i=1;i<5;i++){
+    mp.insert({i,i*10});
+
+}
+for(auto it=mp.begin();it!=mp.end();it++){
+    cout <<"Key " <<it -> first << " Value \t" << it -> second << endl;
+}
+
+}
