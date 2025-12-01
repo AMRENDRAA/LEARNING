@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+#include <map>
+using namespace std;
+int main(){
+
+  
+
+
+
+
+
+
+
+//Print all the divisor of a given number 
+
+int number;
+cin>>number;
+
+
+for(int i=1;i<number;i++){
+    if(number%i==0){
+        cout<<i<<endl;
+
+    }
+
+
+}
