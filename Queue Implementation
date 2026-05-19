@@ -1,0 +1,52 @@
+//JAI SHREE RAM
+
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+#include <map>
+using namespace std;
+
+int main(){
+
+
+
+// First in first out
+//A Queue is a linear data structure that follows the FIFO
+//(First In, First Out) principle. This means the element inserted first is the first one to be removed.
+
+//
+
+queue<int> q;
+    q.push(10);
+    q.push(20);
+    q.push(30);
+    q.push(40);
+
+int current_size = q.size(); 
+
+cout<<current_size<<endl;
+
+//Top element
+cout<<q.front()<<endl;
+// Bottom element 
+cout<<q.back()<<endl;
+
+
+for(int i=0;i<current_size;i++){
+    int front_element =q.front();
+    q.pop();
+    int modified_element= front_element*2;
+    q.push(modified_element);
+}
+
+while(!q.empty()){
+    cout<<q.front()<<" "<<endl;
+    q.pop();
+}
+
+
+
+
