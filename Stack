@@ -1,0 +1,53 @@
+//JAI SHREE RAM
+
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+#include <map>
+using namespace std;
+
+int main(){
+
+
+
+//A Stack is a linear data structure that follows the Last In, First Out (LIFO)
+// principle. The last element added to the stack is the very first one to be removed.
+
+    // push(x): Adds element x to the top.pop(): Removes the element from the top.top() or peek(): Looks at the top element without removing it.empty(): Returns true if the stack contains no elements.
+
+
+stack<int> st;
+
+
+    st.push(10); // Stack: [10] <-- top
+
+    // add the latest element at the top only (beginning )
+    st.push(20); // Stack: [10, 20] <-- top
+    st.push(30); // Stack: [10, 20, 30] <-- top
+
+   cout << "Top element: " << st.top() << endl; // Outputs the first element
+
+   // st.pop();
+   // //delete the  latest element  from the top 
+   // cout<<st.top();
+
+
+
+//Loop to track the stack
+
+     while (!st.empty()) {
+        cout << st.top() << " "; // 1. Access the top element
+        st.pop();                // 2. Remove it to reveal the next one
+    }
+
+
+
+
+
+
+}
+
+
