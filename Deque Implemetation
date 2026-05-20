@@ -1,0 +1,42 @@
+//JAI SHREE RAM
+
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include<string>
+#include<unordered_set>
+#include <map>
+using namespace std;
+
+int main(){
+
+ //   A deque (pronounced "deck", short for double-ended queue) is a linear sequence container that allows fast insertion and deletion at both its beginning and its end.
+
+deque<int> dq = {20, 30, 40};
+dq.push_front(10);//Add 10 to front [10,20,30,40]
+dq.push_back(50);// add 50 at back [10,20,30,40,50]
+
+cout<<dq.front()<<endl;
+cout<<dq.back()<<endl;
+
+ for (int num : dq) {
+        std::cout << num << " ";
+    }
+
+
+      // 5. Double-Ended Deletions [O(1) time]
+    dq.pop_front(); // Removes 10 from the front -> [20, 30, 40, 50]
+    dq.pop_back();  // Removes 50 from the back  -> [20, 30, 40]
+
+    cout<<dq.front();
+    cout<<dq.back();
+    cout << "Size after pops: " << dq.size() << "\n"; // Outputs 3
+   dq.clear(); // Removes all elements
+    std::cout << "Size after clear: " << dq.size() << "\n";
+
+}
+
+
+
+
