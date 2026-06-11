@@ -1,0 +1,31 @@
+Kth Largest Element in an Array
+
+BRUTE FORCE APPROACH 
+
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+
+        // KEEP ALL THE ELEMENTS 
+         multiset<int>m;
+         // INSERT ALL ELEMENTS IN THE MULTISET
+
+       for(int i=0;i<nums.size();i++){
+        m.insert(nums[i]);
+
+       }
+
+       //VECTOR TO INITIALIZE WITH MAP
+
+
+       vector <int >v(m.begin(),m.end());
+
+       // RETURN THE K ELEMENTS
+        return v[v.size() - k];
+
+       
+       }
+
+
+    
+};
