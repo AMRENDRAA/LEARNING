@@ -92,6 +92,23 @@ else:
     print("no")
 
 
+#Number is prime or not 
+
+
+n=int(input("Enter the number "))
+c=0
+
+for i in range(n - 1, 2, -1):
+    if(n%i==0):
+        c+=1
+
+
+if(n>1 and c==0):
+    
+    print("yes")
+else:
+    print("no")
+
 
         
         
