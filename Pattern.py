@@ -110,6 +110,61 @@ else:
     print("no")
 
 
+
+#check for a number is prime or not 
+
+
+# n=int(input("Enter the number "))
+# c=0
+
+# for i in range(n - 1, 2, -1):
+#     if(n%i==0):
+#         c+=1
+
+
+# if(n>1 and c==0):
+    
+#     print("yes")
+# else:
+#     print("no")
+
+
+
+#print all number between 10 to 1 
+
+# for i in range (10,1,-2):
+#     print(i)
+
+
+# for i in range (-1,10,1):
+#     print(i)
+    
+# print()
+# for i in range (1,11,1):
+#     print(i)
+
+
+#largest element in array 
+
+# l=[1,2,4,1,7,10,1,9]
+# l.sort()
+# print(l[-1])
+# n=5
+# l=[]
+# for i in range (0,n,1):
+#     k=int(input("Enter the number"))
+#     l.append(k)
+#     print("Element ",i,"",l[i])
+    
+# for i in range (0,n,1):
+#     print (l[i])
+
+
+    
+    
+    
+    
+
         
         
         
