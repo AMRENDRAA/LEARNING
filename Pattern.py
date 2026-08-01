@@ -65,18 +65,25 @@
 
 
 
+
+
+
+
 print("*"*5);
 
 # REVERSE OF A NUMBER 
 
-
+#Reverse a number 
 n=0 
-i=int(input("Enter the number "))
-j=i;
+i=int(input("Enter the number which you want to reverse"))
+c=0
 
-
-while(j>0):
-    j=j%10
+while(i>0):
+    j=i%10
+    c=c*10+j
+    i=i//10
+    
+print(c);
 
 
 
