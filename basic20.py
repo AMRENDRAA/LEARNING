@@ -24,3 +24,19 @@ class Solution:
         
         return sum//n  
 
+
+
+Palindrome number 
+class Solution:
+    def isPalindrome(self, n):
+        n = abs(n)
+        k = n
+        rev = 0
+        while (k > 0):
+            rev = rev * 10 + k % 10
+            k = k // 10
+        if (rev == n):
+            return True
+        else:
+            return False 
+
