@@ -40,3 +40,16 @@ class Solution:
         else:
             return False 
 
+Palindrome
+
+class Solution:
+    def factorial(self, n: int) -> int:
+        mul=1
+        while(n>0):
+            mul=mul*n
+            n=n-1
+            
+        return mul
+            
+        # code here
+
