@@ -63,5 +63,17 @@ class Solution:
             
         return sum
         # code here
+
+Largest element in an array
+class Solution:
+    def largest(self, arr):
+        
+        max=arr[0]
+        for i in range(len(arr)):
+            if(arr[i]>max):
+                max=arr[i]
+                
+        return max
+        # code here
         
 
