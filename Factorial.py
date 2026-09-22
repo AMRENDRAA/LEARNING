@@ -21,3 +21,22 @@ while(num>0):
     
     
 print(ans)
+
+
+
+
+n=153
+
+t=n
+p=len(str(n))
+while(t>0):
+    d=t%10
+    s+=d**p
+    t//=10
+
+if s==n:
+    print("armstrong number")
+else:
+    print("not armstrong number")
+    
+
