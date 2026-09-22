@@ -61,5 +61,13 @@ def fibonacci(n):
     return fibonacci(n-1) + fibonacci(n-2)
 
 print(fibonacci(9))
-    
+
+
+#Implement negative number filtering from a list
+a = [5, -3, 7, -1, 2, -9, 4]
+
+for num in a:
+    if num < 0:
+        print(num)
+        
 
