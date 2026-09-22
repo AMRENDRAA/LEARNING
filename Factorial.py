@@ -38,5 +38,20 @@ if s==n:
     print("armstrong number")
 else:
     print("not armstrong number")
+
+
+
+n=int(input("enter the number"))
+
+sum=0
+for i in range (2,n-1):
+    if(n%i==0):
+        sum=sum+1
+
+
+if(sum==0):
+    print("yes prime ")
+else:
+    print("no not prime")
     
 
