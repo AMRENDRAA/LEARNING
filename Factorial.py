@@ -69,5 +69,13 @@ a = [5, -3, 7, -1, 2, -9, 4]
 for num in a:
     if num < 0:
         print(num)
+
+#Add list and print positive numbers from it
+a = [-10, 15, 0, 20, -5, 30, -2] 
+
+for i in a:
+    if i>0:
+        print(i)
+        
         
 
