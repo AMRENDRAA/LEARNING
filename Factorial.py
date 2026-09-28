@@ -76,6 +76,11 @@ a = [-10, 15, 0, 20, -5, 30, -2]
 for i in a:
     if i>0:
         print(i)
-        
+
+# Second Largest in an array 
+
+a = [10, 20, 4, 45, 99]
+a.sort(reverse=True)
+print(a[1])
         
 
